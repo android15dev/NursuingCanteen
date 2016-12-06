@@ -10,7 +10,6 @@ import android.util.Patterns;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.Toast;
 
 import com.android15dev.nursuingcanteen.R;
 import com.android15dev.nursuingcanteen.controller.Utils;
@@ -115,7 +114,8 @@ public class FeedbackActivity extends AppCompatActivity implements View.OnClickL
 
     @Override
     protected void onDestroy() {
-        database.removeEventListener(listner);
+        if (listner != null)
+            database.removeEventListener(listner);
         super.onDestroy();
     }
 }

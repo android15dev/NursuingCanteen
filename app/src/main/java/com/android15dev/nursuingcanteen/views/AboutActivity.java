@@ -110,10 +110,15 @@ public class AboutActivity extends AppCompatActivity implements OnMapReadyCallba
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.img_call | R.id.lay_call:
+            case R.id.img_call :
                 Intent callIntent = new Intent(Intent.ACTION_VIEW);
                 callIntent.setData(Uri.parse("tel:+919041490646"));
                 startActivity(callIntent);
+                break;
+            case R.id.lay_call:
+                Intent callIntent1 = new Intent(Intent.ACTION_VIEW);
+                callIntent1.setData(Uri.parse("tel:+919041490646"));
+                startActivity(callIntent1);
                 break;
             case R.id.img_msg:
                 Intent sms_intent = new Intent(Intent.ACTION_SENDTO, Uri.parse("smsto:+919041490646"));
