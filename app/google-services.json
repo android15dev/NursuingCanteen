@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "459972004163",
+    "firebase_url": "https://nursuingcanteen.firebaseio.com",
+    "project_id": "nursuingcanteen",
+    "storage_bucket": "nursuingcanteen.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:459972004163:android:3b4bcac064ef6192",
+        "android_client_info": {
+          "package_name": "com.android15dev.nursuingcanteen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "459972004163-76nb92ncvg4spbh23nkk2uqb79mj9s48.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.android15dev.nursuingcanteen",
+            "certificate_hash": "752727E51F6AB7AABACCBEEC0F86BCA3031BB67D"
+          }
+        },
+        {
+          "client_id": "459972004163-ljsipdlgep2rtb35m68jnvm9r87tvk06.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMwCqlZYGuVWSqWCz0xpa1trByAPJTpyM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "459972004163-ljsipdlgep2rtb35m68jnvm9r87tvk06.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
