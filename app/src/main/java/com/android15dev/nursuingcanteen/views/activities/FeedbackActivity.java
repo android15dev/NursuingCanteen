@@ -1,4 +1,4 @@
-package com.android15dev.nursuingcanteen.views;
+package com.android15dev.nursuingcanteen.views.activities;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;

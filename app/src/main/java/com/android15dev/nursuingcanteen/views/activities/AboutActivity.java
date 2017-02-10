@@ -1,4 +1,4 @@
-package com.android15dev.nursuingcanteen.views;
+package com.android15dev.nursuingcanteen.views.activities;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -29,7 +29,7 @@ public class AboutActivity extends AppCompatActivity implements OnMapReadyCallba
     private NestedScrollView content_about;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate (Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -42,7 +42,7 @@ public class AboutActivity extends AppCompatActivity implements OnMapReadyCallba
 
         new Handler().postDelayed(new Runnable() {
             @Override
-            public void run() {
+            public void run () {
                 mapFragment.getMapAsync(AboutActivity.this);
             }
         }, 1500);
@@ -51,7 +51,7 @@ public class AboutActivity extends AppCompatActivity implements OnMapReadyCallba
 
     }
 
-    private void initUI() {
+    private void initUI () {
         transparentImageView = (ImageView) findViewById(R.id.transparent_image);
         content_about = (NestedScrollView) findViewById(R.id.content_about);
         findViewById(R.id.img_call).setOnClickListener(this);
@@ -64,7 +64,7 @@ public class AboutActivity extends AppCompatActivity implements OnMapReadyCallba
         transparentImageView.setOnTouchListener(new View.OnTouchListener() {
 
             @Override
-            public boolean onTouch(View v, MotionEvent event) {
+            public boolean onTouch (View v, MotionEvent event) {
                 int action = event.getAction();
                 switch (action) {
                     case MotionEvent.ACTION_DOWN:
@@ -87,7 +87,7 @@ public class AboutActivity extends AppCompatActivity implements OnMapReadyCallba
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
+    public boolean onOptionsItemSelected (MenuItem item) {
         switch (item.getItemId()) {
             case android.R.id.home:
                 onBackPressed();
@@ -98,7 +98,7 @@ public class AboutActivity extends AppCompatActivity implements OnMapReadyCallba
     }
 
     @Override
-    public void onMapReady(GoogleMap googleMap) {
+    public void onMapReady (GoogleMap googleMap) {
         mMap = googleMap;
 
         LatLng sydney = new LatLng(30.680351, 74.772518);
@@ -108,20 +108,20 @@ public class AboutActivity extends AppCompatActivity implements OnMapReadyCallba
     }
 
     @Override
-    public void onClick(View v) {
+    public void onClick (View v) {
         switch (v.getId()) {
-            case R.id.img_call :
+            case R.id.img_call:
                 Intent callIntent = new Intent(Intent.ACTION_VIEW);
-                callIntent.setData(Uri.parse("tel:+919041490646"));
+                callIntent.setData(Uri.parse("tel:+919463092892"));
                 startActivity(callIntent);
                 break;
             case R.id.lay_call:
                 Intent callIntent1 = new Intent(Intent.ACTION_VIEW);
-                callIntent1.setData(Uri.parse("tel:+919041490646"));
+                callIntent1.setData(Uri.parse("tel:+919463092892"));
                 startActivity(callIntent1);
                 break;
             case R.id.img_msg:
-                Intent sms_intent = new Intent(Intent.ACTION_SENDTO, Uri.parse("smsto:+919041490646"));
+                Intent sms_intent = new Intent(Intent.ACTION_SENDTO, Uri.parse("smsto:+919463092892"));
                 startActivity(sms_intent);
                 break;
             case R.id.lay_whatsapp:
