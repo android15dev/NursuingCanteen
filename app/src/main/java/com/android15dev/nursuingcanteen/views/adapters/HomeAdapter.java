@@ -32,13 +32,13 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.HomeViewHolder
     }
 
     @Override
-    public void onBindViewHolder (HomeViewHolder holder, int position) {
+    public void onBindViewHolder (HomeViewHolder holder, final int position) {
         holder.txtName.setText(arr[position]);
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick (View v) {
-                activity.startActivity(new Intent(activity, ListActivity.class));
+                activity.startActivity(new Intent(activity, ListActivity.class).putExtra("pos", position));
             }
         });
 

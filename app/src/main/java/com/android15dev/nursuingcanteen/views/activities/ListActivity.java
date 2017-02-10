@@ -41,6 +41,8 @@ public class ListActivity extends AppCompatActivity {
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
 
+        mViewPager.setCurrentItem(getIntent().getIntExtra("pos", 0));
+
     }
 
     @Override
