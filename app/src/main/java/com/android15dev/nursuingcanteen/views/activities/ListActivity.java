@@ -7,14 +7,20 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import com.android15dev.nursuingcanteen.R;
+import com.android15dev.nursuingcanteen.views.adapters.ListAdapter;
+import com.android15dev.nursuingcanteen.views.adapters.VerticalSpaceItemDecoration;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class ListActivity extends AppCompatActivity {
 
@@ -58,15 +64,15 @@ public class ListActivity extends AppCompatActivity {
 
     public static class PlaceholderFragment extends Fragment {
 
-        private static final String ARG_SECTION_NUMBER = "section_number";
+        private static final String ARG_LIST = "list";
 
         public PlaceholderFragment () {
         }
 
-        public static PlaceholderFragment newInstance (int sectionNumber) {
+        public static PlaceholderFragment newInstance (String[] list) {
             PlaceholderFragment fragment = new PlaceholderFragment();
             Bundle args = new Bundle();
-            args.putInt(ARG_SECTION_NUMBER, sectionNumber);
+            args.putStringArray(ARG_LIST, list);
             fragment.setArguments(args);
             return fragment;
         }
@@ -75,8 +81,14 @@ public class ListActivity extends AppCompatActivity {
         public View onCreateView (LayoutInflater inflater, ViewGroup container,
                                   Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_list, container, false);
-            TextView textView = (TextView) rootView.findViewById(R.id.section_label);
-            textView.setText(getString(R.string.section_format, getArguments().getInt(ARG_SECTION_NUMBER)));
+            RecyclerView recyclerView = (RecyclerView) rootView.findViewById(R.id.recyclerView);
+            recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+            recyclerView.addItemDecoration(new VerticalSpaceItemDecoration(20));
+
+            recyclerView.setNestedScrollingEnabled(false);
+            recyclerView.setFocusable(false);
+
+            recyclerView.setAdapter(new ListAdapter(getActivity(), getArguments().getStringArray(ARG_LIST)));
             return rootView;
         }
     }
@@ -84,15 +96,22 @@ public class ListActivity extends AppCompatActivity {
     public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
         private final String[] arr;
+        private List<String[]> listing = new ArrayList<>();
 
         public SectionsPagerAdapter (FragmentManager fm) {
             super(fm);
             arr = getResources().getStringArray(R.array.categories);
+            listing.add(getResources().getStringArray(R.array.paranathas));
+            listing.add(getResources().getStringArray(R.array.snacks));
+            listing.add(getResources().getStringArray(R.array.drinks));
+            listing.add(getResources().getStringArray(R.array.shakes));
+            listing.add(getResources().getStringArray(R.array.chinese));
+            listing.add(getResources().getStringArray(R.array.indian));
         }
 
         @Override
         public Fragment getItem (int position) {
-            return PlaceholderFragment.newInstance(position + 1);
+            return PlaceholderFragment.newInstance(listing.get(position));
         }
 
         @Override

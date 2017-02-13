@@ -1,14 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.android15dev.nursuingcanteen.views.activities.SplashActivity">
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/activity_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.android15dev.nursuingcanteen.views.activities.SplashActivity">
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scaleType="centerCrop" />
+        android:scaleType="centerCrop"
+        android:src="@drawable/splash"/>
+
+    <com.vlad1m1r.lemniscate.funny.HeartProgressView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:duration="1000"
+        app:hasHole="false"
+        app:lineColor="@color/colorPrimaryDark"
+        app:lineLength="0.6"
+        app:lineLengthChangeable="true"
+        app:maxLineLength="0.8"
+        app:minLineLength="0.4"
+        app:sizeMultiplier="1"
+        app:strokeWidth="7dp"/>
+
 
 </RelativeLayout>

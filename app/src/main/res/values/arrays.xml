@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer-array name="catimages">
+        <item>@drawable/paranthas</item>
+        <item>@drawable/snacks</item>
+        <item>@drawable/drinks</item>
+        <item>@drawable/shakes</item>
+        <item>@drawable/chinese</item>
+        <item>@drawable/indian</item>
+    </integer-array>
+
+    <string-array name="categories">
+        <item>Parathas</item>
+        <item>Snacks</item>
+        <item>Drinks</item>
+        <item>Shakes</item>
+        <item>Chinese</item>
+        <item>Indian</item>
+    </string-array>
+
+    <string-array name="paranathas">
+        <item>Parathas 1</item>
+        <item>Parathas 2</item>
+        <item>Parathas 3</item>
+        <item>Parathas 4</item>
+        <item>Parathas 5</item>
+        <item>Parathas 6</item>
+        <item>Parathas 7</item>
+        <item>Parathas 8</item>
+        <item>Parathas 1</item>
+        <item>Parathas 2</item>
+        <item>Parathas 3</item>
+        <item>Parathas 4</item>
+        <item>Parathas 5</item>
+        <item>Parathas 6</item>
+        <item>Parathas 7</item>
+        <item>Parathas 8</item>
+        <item>Parathas 9</item>
+        <item>Parathas 10</item>
+        <item>Parathas 11</item>
+    </string-array>
+
+    <string-array name="snacks">
+        <item>Snacks 1</item>
+        <item>Snacks 2</item>
+        <item>Snacks 3</item>
+        <item>Snacks 4</item>
+        <item>Snacks 5</item>
+        <item>Snacks 6</item>
+        <item>Snacks 7</item>
+        <item>Snacks 8</item>
+        <item>Snacks 9</item>
+        <item>Snacks 10</item>
+        <item>Snacks 11</item>
+    </string-array>
+
+    <string-array name="drinks">
+        <item>Drinks 1</item>
+        <item>Drinks 2</item>
+        <item>Drinks 3</item>
+        <item>Drinks 4</item>
+        <item>Drinks 5</item>
+        <item>Drinks 6</item>
+        <item>Drinks 7</item>
+        <item>Drinks 8</item>
+        <item>Drinks 9</item>
+        <item>Drinks 10</item>
+        <item>Drinks 11</item>
+    </string-array>
+
+    <string-array name="shakes">
+        <item>Shakes 1</item>
+        <item>Shakes 2</item>
+        <item>Shakes 3</item>
+        <item>Shakes 4</item>
+        <item>Shakes 5</item>
+        <item>Shakes 6</item>
+        <item>Shakes 7</item>
+        <item>Shakes 8</item>
+        <item>Shakes 9</item>
+        <item>Shakes 10</item>
+        <item>Shakes 11</item>
+    </string-array>
+
+    <string-array name="chinese">
+        <item>Chinese 1</item>
+        <item>Chinese 2</item>
+        <item>Chinese 3</item>
+        <item>Chinese 4</item>
+        <item>Chinese 5</item>
+        <item>Chinese 6</item>
+        <item>Chinese 7</item>
+        <item>Chinese 8</item>
+        <item>Chinese 9</item>
+        <item>Chinese 10</item>
+        <item>Chinese 11</item>
+    </string-array>
+
+    <string-array name="indian">
+        <item>Indian 1</item>
+        <item>Indian 2</item>
+        <item>Indian 3</item>
+        <item>Indian 4</item>
+        <item>Indian 5</item>
+        <item>Indian 6</item>
+        <item>Indian 7</item>
+        <item>Indian 8</item>
+        <item>Indian 9</item>
+        <item>Indian 10</item>
+        <item>Indian 11</item>
+    </string-array>
+
+</resources>

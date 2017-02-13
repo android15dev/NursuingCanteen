@@ -64,7 +64,7 @@ public class HomeActivity extends AppCompatActivity
         }
     }
 
-    @Override
+   /* @Override
     public boolean onCreateOptionsMenu (Menu menu) {
         getMenuInflater().inflate(R.menu.home, menu);
         return true;
@@ -80,7 +80,7 @@ public class HomeActivity extends AppCompatActivity
 
         return super.onOptionsItemSelected(item);
     }
-
+*/
     @Override
     public boolean onNavigationItemSelected (MenuItem item) {
         drawer.closeDrawer(GravityCompat.START);
