@@ -3,112 +3,209 @@
 
     <integer-array name="catimages">
         <item>@drawable/paranthas</item>
+        <item>@drawable/chat</item>
         <item>@drawable/snacks</item>
-        <item>@drawable/drinks</item>
+        <item>@drawable/tea</item>
+        <item>@drawable/cold_beverages</item>
         <item>@drawable/shakes</item>
+        <item>@drawable/soups</item>
+        <item>@drawable/maggi</item>
         <item>@drawable/chinese</item>
+        <item>@drawable/rice</item>
         <item>@drawable/indian</item>
+        <item>@drawable/thali</item>
     </integer-array>
 
     <string-array name="categories">
-        <item>Parathas</item>
-        <item>Snacks</item>
-        <item>Drinks</item>
+        <item>Pranthas</item>
+        <item>Chat &amp; Snacks</item>
+        <item>Fries</item>
+        <item>Tea/Coffee</item>
+        <item>Cold Beverages</item>
         <item>Shakes</item>
+        <item>Soups</item>
+        <item>Maggi Noodles</item>
         <item>Chinese</item>
-        <item>Indian</item>
+        <item>Bread &amp; Rice</item>
+        <item>Main Course</item>
+        <item>Main Combo</item>
+    </string-array>
+
+    <array name="catdetails">
+        <item>@array/paranathas</item>
+        <item>@array/snacks</item>
+        <item>@array/fries</item>
+        <item>@array/tea_coffee</item>
+        <item>@array/cold_beverages</item>
+        <item>@array/shakes</item>
+        <item>@array/soups</item>
+        <item>@array/maggi</item>
+        <item>@array/chinese</item>
+        <item>@array/rice</item>
+        <item>@array/indian</item>
+        <item>@array/combo</item>
+    </array>
+    <!--
+    //////////////////////////////////////////////////////////////////////////////
+    -->
+
+    <string-array name="combo">
+        <item>Veg. Thali\n(Dal Makhni + Aloo Zeera/ Mix Veg. + Rice + 2 Tawa Roti)</item>
+        <item>Special Veg. Thali\n(Paneer Sabji + Mix Veg. + Rice + 2 Butter Tawa Roti + Raita)</item>
+    </string-array>
+
+    <string-array name="soups">
+        <item>Tomato Soup</item>
+        <item>Chana Soup</item>
+        <item>Veg. Soup</item>
     </string-array>
 
     <string-array name="paranathas">
-        <item>Parathas 1</item>
-        <item>Parathas 2</item>
-        <item>Parathas 3</item>
-        <item>Parathas 4</item>
-        <item>Parathas 5</item>
-        <item>Parathas 6</item>
-        <item>Parathas 7</item>
-        <item>Parathas 8</item>
-        <item>Parathas 1</item>
-        <item>Parathas 2</item>
-        <item>Parathas 3</item>
-        <item>Parathas 4</item>
-        <item>Parathas 5</item>
-        <item>Parathas 6</item>
-        <item>Parathas 7</item>
-        <item>Parathas 8</item>
-        <item>Parathas 9</item>
-        <item>Parathas 10</item>
-        <item>Parathas 11</item>
+        <item>Aloo Parantha</item>
+        <item>Onion Parantha</item>
+        <item>Gobbi Parantha</item>
+        <item>Mooli Parantha</item>
+        <item>Paneer Parantha</item>
+        <item>Mix Parantha</item>
+        <item>Lacha Parantha</item>
+        <item>Plain Parantha</item>
+        <item>Sugar Parantha</item>
+        <item>Dal Parantha</item>
+        <item>Egg Parantha</item>
+        <item>Namak Mirch Ajwain Parantha</item>
     </string-array>
 
     <string-array name="snacks">
-        <item>Snacks 1</item>
-        <item>Snacks 2</item>
-        <item>Snacks 3</item>
-        <item>Snacks 4</item>
-        <item>Snacks 5</item>
-        <item>Snacks 6</item>
-        <item>Snacks 7</item>
-        <item>Snacks 8</item>
-        <item>Snacks 9</item>
-        <item>Snacks 10</item>
-        <item>Snacks 11</item>
+        <item>Dhai Bhalla</item>
+        <item>Chaat Papdi</item>
+        <item>Gol Gappe</item>
+        <item>Dhokla</item>
+        <item>Bread Butter</item>
+        <item>Pav Bhaji</item>
+        <item>Noodle Potli</item>
+        <item>Chilli Potato</item>
+        <item>Cheese Chilli Dry</item>
+        <item>Cheese Chilli Gravy</item>
+        <item>Momos Veg. Steamed</item>
+        <item>Fried Momos</item>
+        <item>Masala Idli</item>
+        <item>Special Tadka Idli</item>
+        <item>Sambar Idli</item>
+        <item>Sambar Vada</item>
+        <item>Egg Bhurji</item>
+        <item>Veg. Sandwich</item>
+        <item>Grill Sandwich Pasta Sauce</item>
+        <item>Grill Sandwich Mayonnaise</item>
+        <item>Honey Chilli Cauliflower</item>
     </string-array>
 
-    <string-array name="drinks">
-        <item>Drinks 1</item>
-        <item>Drinks 2</item>
-        <item>Drinks 3</item>
-        <item>Drinks 4</item>
-        <item>Drinks 5</item>
-        <item>Drinks 6</item>
-        <item>Drinks 7</item>
-        <item>Drinks 8</item>
-        <item>Drinks 9</item>
-        <item>Drinks 10</item>
-        <item>Drinks 11</item>
+    <string-array name="maggi">
+        <item>Boiled Maggi</item>
+        <item>Boiled Cream Maggi</item>
+        <item>Fried Maggi</item>
+        <item>Fried Cream Maggi</item>
+        <item>Cheese Maggi</item>
+        <item>Red Sauce Pasta</item>
+        <item>White Sauce Pasta</item>
+        <item>Red Sauce Macaroni</item>
+        <item>White Sauce Macaroni</item>
+    </string-array>
+
+    <string-array name="fries">
+        <item>Paneer Pakora</item>
+        <item>Bread Pakora</item>
+        <item>Veg. Mix Pakora</item>
+        <item>Samosa</item>
+        <item>Spring Roll</item>
+        <item>Stuffed Aloo Tikki</item>
+        <item>French Fries</item>
+        <item>Veg. Bullets</item>
+        <item>Cheese Fingers</item>
+    </string-array>
+
+    <string-array name="tea_coffee">
+        <item>Simple Tea</item>
+        <item>Milk Tea</item>
+        <item>Green Tea</item>
+        <item>Lemon Tea</item>
+        <item>Ice Tea</item>
+        <item>Black Tea</item>
+        <item>Hot Coffee</item>
+        <item>Hot Coffee Cream</item>
+        <item>Cold Coffee</item>
+        <item>Cold Coffee Cream</item>
+    </string-array>
+
+    <string-array name="cold_beverages">
+        <item>Nimbu Pani Plain</item>
+        <item>Nimbu Pani Masala Zalzeera</item>
+        <item>Rooh Afza Sharbat</item>
+        <item>Thandai</item>
+        <item>Plain Lassi</item>
+        <item>Sweet lassi</item>
+        <item>Soft Drinks (300 ml.)</item>
+        <item>Soft Drinks (600 ml.)</item>
     </string-array>
 
     <string-array name="shakes">
-        <item>Shakes 1</item>
-        <item>Shakes 2</item>
-        <item>Shakes 3</item>
-        <item>Shakes 4</item>
-        <item>Shakes 5</item>
-        <item>Shakes 6</item>
-        <item>Shakes 7</item>
-        <item>Shakes 8</item>
-        <item>Shakes 9</item>
-        <item>Shakes 10</item>
-        <item>Shakes 11</item>
+        <item>Mango Shake</item>
+        <item>Banana Shake</item>
+        <item>Chocolate Shake</item>
+        <item>Butterscotch Shake</item>
+        <item>Strawberry Shake</item>
+        <item>Pineapple Shake</item>
+        <item>Brahmi Shake</item>
     </string-array>
 
     <string-array name="chinese">
-        <item>Chinese 1</item>
-        <item>Chinese 2</item>
-        <item>Chinese 3</item>
-        <item>Chinese 4</item>
-        <item>Chinese 5</item>
-        <item>Chinese 6</item>
-        <item>Chinese 7</item>
-        <item>Chinese 8</item>
-        <item>Chinese 9</item>
-        <item>Chinese 10</item>
-        <item>Chinese 11</item>
+        <item>Veg. Burger</item>
+        <item>Grill Burger</item>
+        <item>Cheese Burger</item>
+        <item>Veg. Noodles</item>
+        <item>Cheese Noodles</item>
+        <item>Chilli Garlic Noodles</item>
+        <item>Singapuri Noodles</item>
+        <item>Hakka Noodles</item>
+        <item>Day Night Noodles</item>
+        <item>Triple Star Noodles</item>
+        <item>Veg. Manchurian Dry</item>
+        <item>Veg. Manchurian Gravy</item>
+        <item>Cheese Manchurian</item>
     </string-array>
 
     <string-array name="indian">
-        <item>Indian 1</item>
-        <item>Indian 2</item>
-        <item>Indian 3</item>
-        <item>Indian 4</item>
-        <item>Indian 5</item>
-        <item>Indian 6</item>
-        <item>Indian 7</item>
-        <item>Indian 8</item>
-        <item>Indian 9</item>
-        <item>Indian 10</item>
-        <item>Indian 11</item>
+        <item>Dal Fry</item>
+        <item>Dal Makhni</item>
+        <item>Yellow Dal</item>
+        <item>Aloo Zeera</item>
+        <item>Aloo Tomato</item>
+        <item>Aloo Gobbi</item>
+        <item>Mix Veg.</item>
+        <item>Malai Kofta</item>
+        <item>Veg. Gravy</item>
+        <item>Cheese Tomato</item>
+        <item>Shahi Paneer</item>
+        <item>Kadhai Paneer</item>
+        <item>Paneer Butter Masala</item>
+        <item>Paneer Burji</item>
+        <item>Paneer Do Pyaza</item>
+        <item>Paneer Malai Methi</item>
+        <item>Green Salad</item>
+        <item>Cream Salad</item>
+    </string-array>
+
+    <string-array name="rice">
+        <item>Tawa Roti</item>
+        <item>Butter Tawa Roti</item>
+        <item>Missi Roti</item>
+        <item>Plain Rice</item>
+        <item>Zeera Rice</item>
+        <item>Fried Rice</item>
+        <item>Cheese Fried Rice</item>
+        <item>Veg. Pulao</item>
+        <item>Veg. Biryani</item>
+        <item>Cheese Biryani</item>
+
     </string-array>
 
 </resources>

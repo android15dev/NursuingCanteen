@@ -1,5 +1,6 @@
 package com.android15dev.nursuingcanteen.views.activities;
 
+import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
@@ -19,9 +20,6 @@ import com.android15dev.nursuingcanteen.R;
 import com.android15dev.nursuingcanteen.views.adapters.ListAdapter;
 import com.android15dev.nursuingcanteen.views.adapters.VerticalSpaceItemDecoration;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class ListActivity extends AppCompatActivity {
 
     private SectionsPagerAdapter mSectionsPagerAdapter;
@@ -30,6 +28,7 @@ public class ListActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate (Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
 
@@ -96,22 +95,27 @@ public class ListActivity extends AppCompatActivity {
     public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
         private final String[] arr;
-        private List<String[]> listing = new ArrayList<>();
+        private final TypedArray catdetails;
+//        private List<String[]> listing = new ArrayList<>();
+
 
         public SectionsPagerAdapter (FragmentManager fm) {
             super(fm);
             arr = getResources().getStringArray(R.array.categories);
-            listing.add(getResources().getStringArray(R.array.paranathas));
+            catdetails = getResources().obtainTypedArray(R.array.catdetails);
+           /* listing.add(getResources().getStringArray(R.array.paranathas));
             listing.add(getResources().getStringArray(R.array.snacks));
             listing.add(getResources().getStringArray(R.array.drinks));
             listing.add(getResources().getStringArray(R.array.shakes));
+            listing.add(getResources().getStringArray(R.array.soups));
             listing.add(getResources().getStringArray(R.array.chinese));
-            listing.add(getResources().getStringArray(R.array.indian));
+            listing.add(getResources().getStringArray(R.array.rice));
+            listing.add(getResources().getStringArray(R.array.indian));*/
         }
 
         @Override
         public Fragment getItem (int position) {
-            return PlaceholderFragment.newInstance(listing.get(position));
+            return PlaceholderFragment.newInstance(getResources().getStringArray(catdetails.getResourceId(position, -1)));
         }
 
         @Override

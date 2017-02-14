@@ -30,11 +30,10 @@ public class HomeActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setTitle("Home");
+        toolbar.setTitle(getString(R.string.app_name));
         setSupportActionBar(toolbar);
 
         initUI();
-
     }
 
     private void initUI () {
